@@ -6,7 +6,7 @@ export default {
     BlogPostList
   },
   async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
+    const posts = await $content('blog/display').fetch()
 
     return {
       posts
